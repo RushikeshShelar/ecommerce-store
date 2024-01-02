@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { Expand, ShoppingCart } from "lucide-react";
 
 import { Product } from "@/types";
 import IconButton from "@/components/ui/icon-button";
 import Currency from "@/components/ui/currency";
-import { Expand, ShoppingCart } from "lucide-react";
 
 interface ProductCardProps {
     data: Product;
@@ -14,11 +15,21 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({
     data
 }) => {
+
+    const router = useRouter()
+
+    const handleClick = () => {
+        ;
+        router.push(`/product/${data?.id}`)
+    }
+
     return (
-        <div className="bg-white group cursor-pointer rounded-xl p-3 border space-y-4 ">
+        <div
+            onClick={handleClick}
+            className="bg-white group cursor-pointer rounded-xl p-3 border space-y-4 ">
             {/*Images and Action */}
             <div className="aspect-square rounded-xl bg-grey-100 relative">
-                <Image 
+                <Image
                     src={data?.images?.[0]?.url}
                     alt="Image"
                     fill
@@ -26,12 +37,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 />
                 <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
                     <div className="flex gap-x-6 justify-center">
-                        <IconButton 
-                            onClick={() => {}}
+                        <IconButton
+                            onClick={() => { }}
                             icon={<Expand size={20} className="text-gray-600" />}
                         />
-                        <IconButton 
-                            onClick={() => {}}
+                        <IconButton
+                            onClick={() => { }}
                             icon={<ShoppingCart size={20} className="text-gray-600" />}
                         />
                     </div>
@@ -43,7 +54,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                     {data.name}
                 </p>
                 <p className="text-sm text-gray-500">
-                    {data.category?.name}    
+                    {data.category?.name}
                 </p>
             </div>
             {/* Price */}
