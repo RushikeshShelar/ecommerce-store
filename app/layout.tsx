@@ -11,8 +11,8 @@ import './globals.css'
 const urbanist = Urbanist({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Store',
-  description: 'Store',
+  title: 'NextMart | Rushikesh Shelar',
+  description: 'E-commerce website built with Next.js and TypeScript.',
 }
 
 export default function RootLayout({
