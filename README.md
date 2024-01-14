@@ -20,6 +20,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - **Backend:** Next.js
 - **Database & ORM**: MySQL, Prisma, PlanetScale.
 - **Styling:** Tailwind CSS.
+- **Checkout & Payment Gateway**: Stripe
 - **Version Control:** Git and GitHub.
 - **Hosting:** Vercel.
 
