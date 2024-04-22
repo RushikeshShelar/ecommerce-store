@@ -1,36 +1,94 @@
+# Ecommerce Store
+
+Welcome to the Ecommerce Store repository – your one-stop solution for effective online shopping. This Ecommerce store not only showcases a wide range of products but is also connected to a Admin Dashboard & CMS for efficient content management. Check out the  [Admin Dashboard](https://github.com/RushikeshShelar/ecommerce-admin) Repository for more details.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Features
 
-## Getting Started
+- **User-friendly Interface**: Intuitive design for seamless navigation.
+- **Shopping Cart**: Easily add and manage your selected items.
+- **Product Catalog**: Browse through an extensive range of products.
+- **Secure Checkout**: A secure and hassle-free payment process.
+- **Product Gallery**: Enjoy a visual feast with a dedicated gallery for each product.
+- **Preview Modal**: Get a sneak peek at a product without opening its page.
+- **Responsive Design**: Accessible on various devices.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+
+- **Frontend:** React.js, Next.js, TypeScript.
+- **Backend:** Next.js
+- **Database & ORM**: MySQL, Prisma, PlanetScale.
+- **Styling:** Tailwind CSS.
+- **Checkout & Payment Gateway**: Stripe
+- **Version Control:** Git and GitHub.
+- **Hosting:** Vercel.
+
+## Installation
+
+Install project with npm
+
+### Prerequisites
+
+1. **Node version 14.x**
+
+2. **Setup the Admin Dashboard:**
+- Make sure to set up the [Admin Dashboard](https://github.com/RushikeshShelar/ecommerce-admin) first before setting up store for content management.
+
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/RushikeshShelar/ecommerce-store.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Move into the store folder
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+cd ecommerce-store
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Install packages
 
-## Learn More
+```shell
+npm i
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Setup .env file
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```js
+NEXT_PUBLIC_API_URL="<GET_THIS_URL_ON_ADMIN_DASHBAORD_SETTINGS_PAGE>"
+```
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Start the app
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```shell
+npm run dev
+```
+
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
+
+## Acknowledgements
+
+ - [codewithantonio](https://www.codewithantonio.com/)
+ - [Harkirat Singh](https://100xdevs.com/)
+
+## License:
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Authors
+
+- [@Rushikesh Shelar](https://www.github.com/RushikeshShelar)
+
+
+## Contact
+For any inquiries, reach out to [Rushikesh Shelar](mailto:rushikeshshelar.cs@gmail.com).
